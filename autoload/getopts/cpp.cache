@@ -1,0 +1,6 @@
+-I/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/include/g++-v4/
+-I/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/include/g++-v4/i686-pc-linux-gnu/
+-I/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/include/g++-v4/backward/
+-I/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/include/
+-I/usr/lib/gcc/i686-pc-linux-gnu/4.5.3/include-fixed/
+-I/usr/include/
