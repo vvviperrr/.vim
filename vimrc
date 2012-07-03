@@ -66,17 +66,6 @@ set nocursorline
 set timeoutlen=1000
 set cinoptions=:0g0
 
-set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
-
-"Кодировка терминала, должна совпадать с той, которая используется для вывода
-"в терминал
-set termencoding=utf8
-"
-"возможные кодировки файлов и последовательность определения.
-set fileencodings=utf8,cp1251
-
-set encoding=utf8
-
 colorscheme xoria256
 
 nnoremap * *N
@@ -108,3 +97,35 @@ let NERDTreeWinPos = "right"
 let g:tagbar_left = 1
 let clang_close_preview=1
 let clang_snippets=1
+
+
+set fileformat=unix
+set fileencodings=utf8,cp1251
+
+if has("win32")
+	set encoding=cp1251
+	set iskeyword=@,48-57,_,192-255
+else
+	set termencoding=utf8
+	set encoding=utf8
+	set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+endif
+
+
+if has("gui_running")
+	set guioptions-=m
+	set guioptions-=T
+	set guioptions-=r
+	set guioptions-=R
+	set guioptions-=l
+	set guioptions-=L
+
+	if has("gui_motif")
+		set guifont=-xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+	elseif has("gui_gtk2")
+		set guifont=Liberation\ Mono\ 10
+	elseif has("gui_win32")
+		set guifont=Liberation_Mono:h10:cRUSSIAN
+	endif
+endif
+
