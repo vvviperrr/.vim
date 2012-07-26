@@ -73,3 +73,5 @@ elseif &ft == "c"
 endif
 
 inoremap  <buffer>  {<CR>    {<CR>}<Esc>O
+
+set dictionary=$HOME/.vim/wordlists/c-cpp/*.list
