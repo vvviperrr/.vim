@@ -47,6 +47,8 @@ set clipboard+=unnamed
 
 set autoread
 
+set completeopt=menu
+
 "load ftplugins and indent files
 filetype on
 filetype plugin on
@@ -97,6 +99,7 @@ let NERDTreeWinPos = "right"
 let g:tagbar_left = 1
 let clang_close_preview=1
 let clang_snippets=1
+let g:clang_hl_errors = 0
 
 
 set fileformat=unix
