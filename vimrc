@@ -68,6 +68,8 @@ set nocursorline
 set timeoutlen=1000
 set cinoptions=:0g0
 
+set laststatus=2
+
 colorscheme xoria256
 
 nnoremap * *N
