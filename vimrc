@@ -71,7 +71,8 @@ set cinoptions=:0g0
 set laststatus=2
 
 "colorscheme xoria256
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
+colorscheme hybrid
 
 nnoremap * *N
 nnoremap # #N
