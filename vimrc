@@ -26,10 +26,10 @@ set softtabstop=4
 "set expandtab
 set autoindent
 
-"set foldmethod=indent "fold based on indent
-set foldmethod=syntax "fold based on syntax
-set foldnestmax=3 "deepest fold is 3 levels
-set nofoldenable "dont fold by default
+"folds config
+set foldmethod=marker
+set foldnestmax=3
+set nofoldenable
 
 "set wildmode=list:longest "make cmdline tab completion similar to bash
 set wildmenu "enable ctrl-n and ctrl-p to scroll thru matches
@@ -58,21 +58,18 @@ filetype indent on
 syntax on
 
 set t_Co=256
-
 set lazyredraw
 set synmaxcol=2048
-
 set nocursorcolumn
 set nocursorline
-
 set timeoutlen=1000
 set cinoptions=:0g0
-
 set laststatus=2
 
 "colorscheme xoria256
-"colorscheme Tomorrow-Night
-colorscheme hybrid
+"colorscheme void
+"colorscheme hybrid
+colorscheme Tomorrow-Night
 
 nnoremap * *N
 nnoremap # #N
@@ -96,15 +93,12 @@ nnoremap <C-F8> :nohlsearch<CR>
 "cnoremap   <Left>   <NOP>
 "cnoremap   <Right>  <NOP>
 
-"set tags+=~/.vim/tags/rbit
-
 let Tlist_Show_One_File = 1
 let NERDTreeWinPos = "right"
 let g:tagbar_left = 1
-let clang_close_preview=1
-let clang_snippets=1
+let g:clang_close_preview=1
+let g:clang_snippets=1
 let g:clang_hl_errors = 0
-
 
 set fileformat=unix
 set fileencodings=utf8,cp1251
@@ -162,3 +156,5 @@ if has("win32")
 		silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 	endfunction
 endif
+
+source vimrc.local
