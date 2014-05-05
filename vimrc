@@ -157,4 +157,4 @@ if has("win32")
 	endfunction
 endif
 
-source vimrc.local
+source $HOME/.vim/vimrc.local
