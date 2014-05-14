@@ -1,2 +1,3 @@
 vimrc.local
 *.pyc
+*.cache
