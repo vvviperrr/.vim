@@ -71,8 +71,6 @@ set laststatus=2
 "colorscheme hybrid
 colorscheme Tomorrow-Night
 
-nnoremap * *N
-nnoremap # #N
 nnoremap <F2> :TagbarToggle<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TaskList<CR>
