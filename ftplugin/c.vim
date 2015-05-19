@@ -68,7 +68,7 @@ if &ft == "cpp"
 	:map <F9> :w\|:!clang++ -std=c++11 % -o a.out<CR>
 	:map <C-F9> :w\|:!./a.out<CR>
 elseif &ft == "c"
-	:map <F9> :w\|:!gcc % -o a.out<CR>
+	:map <F9> :w\|:!gcc -std=c99 % -o a.out<CR>
 	:map <C-F9> :w\|:!./a.out<CR>
 endif
 
