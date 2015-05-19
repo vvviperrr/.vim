@@ -23,7 +23,7 @@ set nowrap linebreak nolist
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-"set expandtab
+set expandtab
 set autoindent
 
 "folds config
@@ -48,6 +48,9 @@ set clipboard+=unnamed
 set autoread
 
 set completeopt=menu
+
+set backupdir=/var/tmp,/tmp
+set directory=/var/tmp,/tmp
 
 "load ftplugins and indent files
 filetype on
