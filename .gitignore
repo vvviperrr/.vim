@@ -1,3 +1,6 @@
 vimrc.local
 *.pyc
 *.cache
+*~
+*.swp
+tags
