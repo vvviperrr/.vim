@@ -49,6 +49,8 @@ set autoread
 
 set completeopt=menu
 
+set mouse=a
+
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 
