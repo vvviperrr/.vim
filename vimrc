@@ -51,6 +51,10 @@ set completeopt=menu
 
 set mouse=a
 
+"This will set your path variable to current directory (from which you launched vim)
+"and to all directories under current directory recursively.
+set path+=$PWD/**
+
 set backupdir=/var/tmp,/tmp
 set directory=/var/tmp,/tmp
 
