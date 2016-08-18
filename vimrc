@@ -128,6 +128,7 @@ if has("gui_running")
 	set guioptions-=R
 	set guioptions-=l
 	set guioptions-=L
+	set guioptions+=c
 
 	if has("gui_motif")
 		set guifont=-xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
