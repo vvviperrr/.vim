@@ -108,6 +108,7 @@ let g:clang_close_preview=1
 let g:clang_snippets=1
 let g:clang_hl_errors = 0
 let g:tagbar_sort = 0
+let g:clang_user_options = '-std=c++11'
 
 set fileformat=unix
 set fileencodings=utf8,cp1251
