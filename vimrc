@@ -85,6 +85,7 @@ nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TaskList<CR>
 nnoremap <F5> :bn<CR>
 nnoremap <F6> :bp<CR>
+nnoremap <F7> :set list!<CR>
 nnoremap <C-F8> :nohlsearch<CR>
 
 "inoremap  <Up>     <NOP>
