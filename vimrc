@@ -31,6 +31,7 @@ set foldmethod=marker
 set foldnestmax=3
 set nofoldenable
 set foldopen=mark,quickfix,search,tag,undo
+set foldnestmax=1
 
 "set wildmode=list:longest "make cmdline tab completion similar to bash
 set wildmenu "enable ctrl-n and ctrl-p to scroll thru matches
@@ -89,19 +90,6 @@ nnoremap <F6> :bp<CR>
 nnoremap <F7> :set list!<CR>
 nnoremap <C-F8> :nohlsearch<CR>
 
-"inoremap  <Up>     <NOP>
-"inoremap  <Down>   <NOP>
-"inoremap  <Left>   <NOP>
-"inoremap  <Right>  <NOP>
-"noremap   <Up>     <NOP>
-"noremap   <Down>   <NOP>
-"noremap   <Left>   <NOP>
-"noremap   <Right>  <NOP>
-"cnoremap   <Up>     <NOP>
-"cnoremap   <Down>   <NOP>
-"cnoremap   <Left>   <NOP>
-"cnoremap   <Right>  <NOP>
-
 let Tlist_Show_One_File = 1
 let NERDTreeWinPos = "right"
 let g:tagbar_left = 1
@@ -123,7 +111,6 @@ else
 	set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 endif
 
-
 if has("gui_running")
 	set guioptions-=m
 	set guioptions-=T
@@ -140,6 +127,8 @@ if has("gui_running")
 	elseif has("gui_win32")
 		set guifont=Liberation_Mono:h10:cRUSSIAN
 	endif
+else
+	set background=dark
 endif
 
 if has("win32")
