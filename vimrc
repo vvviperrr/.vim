@@ -23,13 +23,14 @@ set nowrap linebreak nolist
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
+" set expandtab
 set autoindent
 
 "folds config
 set foldmethod=marker
 set foldnestmax=3
 set nofoldenable
+set foldopen=mark,quickfix,search,tag,undo
 
 "set wildmode=list:longest "make cmdline tab completion similar to bash
 set wildmenu "enable ctrl-n and ctrl-p to scroll thru matches
