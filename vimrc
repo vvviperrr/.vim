@@ -23,7 +23,7 @@ set nowrap linebreak nolist
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-" set expandtab
+set noexpandtab
 set autoindent
 
 "folds config
@@ -86,6 +86,7 @@ nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TaskList<CR>
 nnoremap <F5> :bn<CR>
 nnoremap <F6> :bp<CR>
+nnoremap <F7> :set list!<CR>
 nnoremap <C-F8> :nohlsearch<CR>
 
 "inoremap  <Up>     <NOP>
@@ -108,6 +109,7 @@ let g:clang_close_preview=1
 let g:clang_snippets=1
 let g:clang_hl_errors = 0
 let g:tagbar_sort = 0
+let g:clang_user_options = '-std=c++11'
 
 set fileformat=unix
 set fileencodings=utf8,cp1251
