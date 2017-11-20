@@ -158,4 +158,12 @@ if has("win32")
 	endfunction
 endif
 
+function SplitToLines() range
+  for lnum in range(a:lastline, a:firstline, -1)
+    let words = split(getline(lnum))
+    execute lnum . "delete"
+    call append(lnum-1, words)
+  endfor
+endfunction
+
 source $HOME/.vim/vimrc.local
