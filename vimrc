@@ -166,4 +166,15 @@ function SplitToLines() range
   endfor
 endfunction
 
+" Don't allow editing of read only files
+autocmd BufRead * call RONoEdit()
+
+function! RONoEdit()
+  if &readonly == 1
+    set nomodifiable
+  else
+    set modifiable
+  endif
+endfunction
+
 source $HOME/.vim/vimrc.local
